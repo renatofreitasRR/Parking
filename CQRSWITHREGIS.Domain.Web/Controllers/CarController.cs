@@ -1,23 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Parking.Domain.Core.Entities;
-using Parking.Domain.Core.Repositories.Contracts;
+using Parking.Domain.Data;
+using Parking.Domain.Entities;
+using Parking.Domain.Repositories.Contracts;
 
-namespace Parking.Domain.Web.Controllers
+namespace Parking.Web.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class CarController : ControllerBase
     {
-        private readonly IRepository<Car> _repository;
-        public CarController(IRepository<Car> repository)
+        private readonly IUnitOfWork _uow;
+        public CarController(IUnitOfWork uow)
         {
-            _repository = repository;
+            _uow = uow;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            await _repository.GetAllAsync();
+            await _uow.CarRepository.GetAllAsync();
 
             return Ok(new { });
         }

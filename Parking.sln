@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parking.Domain.Web", "CQRSWITHREGIS.Domain.Web\Parking.Domain.Web.csproj", "{37A842E2-9147-4022-953B-9111D47C029C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parking.Web", "CQRSWITHREGIS.Domain.Web\Parking.Web.csproj", "{37A842E2-9147-4022-953B-9111D47C029C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parking.Domain.Core", "CQRSWITHREGIS.Domain.Core\Parking.Domain.Core.csproj", "{20DB023C-1398-4614-BEB6-A6CF24B22DFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parking.Domain", "CQRSWITHREGIS.Domain.Core\Parking.Domain.csproj", "{20DB023C-1398-4614-BEB6-A6CF24B22DFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parking.Domain.Infra", "Parking.Domain.Infra\Parking.Domain.Infra.csproj", "{5A29407F-0D93-41D8-9AAC-E1506C2DCAE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parking.Infra", "Parking.Domain.Infra\Parking.Infra.csproj", "{5A29407F-0D93-41D8-9AAC-E1506C2DCAE9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parking.Infra.Read", "Parking.Domain.Infra.Mongo\Parking.Infra.Read.csproj", "{F00AC7D7-8A2A-4118-9372-08815C6098BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{5A29407F-0D93-41D8-9AAC-E1506C2DCAE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A29407F-0D93-41D8-9AAC-E1506C2DCAE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A29407F-0D93-41D8-9AAC-E1506C2DCAE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F00AC7D7-8A2A-4118-9372-08815C6098BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F00AC7D7-8A2A-4118-9372-08815C6098BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F00AC7D7-8A2A-4118-9372-08815C6098BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F00AC7D7-8A2A-4118-9372-08815C6098BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Parking.Domain.Core.Repositories;
+using Parking.Domain.Repositories;
 
-namespace Parking.Domain.Core.Data
+namespace Parking.Domain.Data
 {
     public interface IUnitOfWork
     {

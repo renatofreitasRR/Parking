@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace Parking.Domain.Infra.Data
+namespace Parking.Infra.Data
 {
     public class DataContext : DbContext
     {

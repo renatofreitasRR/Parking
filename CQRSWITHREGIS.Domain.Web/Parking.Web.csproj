@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CQRSWITHREGIS.Domain.Core\Parking.Domain.Core.csproj" />
-    <ProjectReference Include="..\Parking.Domain.Infra\Parking.Domain.Infra.csproj" />
+    <ProjectReference Include="..\CQRSWITHREGIS.Domain.Core\Parking.Domain.csproj" />
+    <ProjectReference Include="..\Parking.Domain.Infra\Parking.Infra.csproj" />
   </ItemGroup>
 
 </Project>

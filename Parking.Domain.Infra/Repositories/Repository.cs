@@ -1,9 +1,9 @@
 ﻿using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
-using Parking.Domain.Core.Repositories.Contracts;
-using Parking.Domain.Infra.Data;
+using Parking.Domain.Repositories.Contracts;
+using Parking.Infra.Data;
 
-namespace Parking.Domain.Infra.Repositories
+namespace Parking.Infra.Repositories
 {
     public class Repository<T> : IRepository<T> where T : class
     {

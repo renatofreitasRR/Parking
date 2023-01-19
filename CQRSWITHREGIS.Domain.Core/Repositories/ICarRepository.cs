@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Parking.Domain.Core.Entities;
-using Parking.Domain.Core.Repositories.Contracts;
+using Parking.Domain.Entities;
+using Parking.Domain.Repositories.Contracts;
 
-namespace Parking.Domain.Core.Repositories
+namespace Parking.Domain.Repositories
 {
     public interface ICarRepository : IRepository<Car>
     {

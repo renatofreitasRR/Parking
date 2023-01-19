@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Parking.Domain.Core.Repositories.Contracts
+namespace Parking.Domain.Repositories.Contracts
 {
     public interface IRepository<T> where T : class
     {

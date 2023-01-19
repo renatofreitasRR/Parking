@@ -1,5 +1,5 @@
-using Parking.Domain.Core.Data;
-using Parking.Domain.Infra.Data;
+using Parking.Domain.Data;
+using Parking.Infra.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

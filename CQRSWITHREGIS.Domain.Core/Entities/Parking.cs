@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Parking.Domain.Core.Entities
+namespace Parking.Domain.Entities
 {
     public class Parking : BaseEntity
     {

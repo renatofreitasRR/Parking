@@ -1,5 +1,6 @@
-using Parking.Domain.Data;
-using Parking.Infra.Data;
+using Microsoft.EntityFrameworkCore;
+using Parking.Infra.CrossCutting.Ioc;
+using Parking.Infra.Write.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,11 +8,21 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<DataContext>(b => b.UseSqlServer(""));
+
+builder.Services.RegisterServices();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 app.UseHttpsRedirection();
 

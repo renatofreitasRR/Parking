@@ -1,23 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Parking.Domain.Data;
+﻿using Parking.Domain.Data;
 using Parking.Domain.Repositories;
-using Parking.Infra.Repositories;
+using Parking.Infra.Read.Repositories;
+using Parking.Infra.Write.Repositories;
 
-namespace Parking.Infra.Data
+namespace Parking.Infra.Write.Data
 {
     public class UnitOfWork : IUnitOfWork, IDisposable
     {
         private readonly DataContext _context;
         public ICarRepository CarRepository { get; }
+        public IReadCarRepository ReadCarRepository { get; }
 
         public UnitOfWork(DataContext context)
         {
             _context = context;
             CarRepository = new CarRepository(context);
+            ReadCarRepository = new ReadCarRepository();
         }
 
         public async Task CommitAsync()

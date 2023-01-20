@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parking.Web", "CQRSWITHREGI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parking.Domain", "CQRSWITHREGIS.Domain.Core\Parking.Domain.csproj", "{20DB023C-1398-4614-BEB6-A6CF24B22DFA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parking.Infra", "Parking.Domain.Infra\Parking.Infra.csproj", "{5A29407F-0D93-41D8-9AAC-E1506C2DCAE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parking.Infra.Write", "Parking.Domain.Infra\Parking.Infra.Write.csproj", "{5A29407F-0D93-41D8-9AAC-E1506C2DCAE9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parking.Infra.Read", "Parking.Domain.Infra.Mongo\Parking.Infra.Read.csproj", "{F00AC7D7-8A2A-4118-9372-08815C6098BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parking.Infra.CrossCutting.Ioc", "Parking.Infra.CrossCutting.Ioc\Parking.Infra.CrossCutting.Ioc.csproj", "{7CB8BB91-9D36-40D5-AAD0-143A66110784}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F00AC7D7-8A2A-4118-9372-08815C6098BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F00AC7D7-8A2A-4118-9372-08815C6098BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F00AC7D7-8A2A-4118-9372-08815C6098BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CB8BB91-9D36-40D5-AAD0-143A66110784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB8BB91-9D36-40D5-AAD0-143A66110784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB8BB91-9D36-40D5-AAD0-143A66110784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB8BB91-9D36-40D5-AAD0-143A66110784}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

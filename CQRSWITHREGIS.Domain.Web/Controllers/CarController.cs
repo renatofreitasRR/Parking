@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Parking.Domain.Data;
-using Parking.Domain.Entities;
-using Parking.Domain.Repositories.Contracts;
+using Parking.Infra.Read.Entities;
 
 namespace Parking.Web.Controllers
 {
@@ -18,9 +17,9 @@ namespace Parking.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            await _uow.CarRepository.GetAllAsync();
+            var data = _uow.ReadCarRepository.Get();
 
-            return Ok(new { });
+            return Ok(data);
         }
     }
 }

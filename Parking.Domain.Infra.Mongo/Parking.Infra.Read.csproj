@@ -11,4 +11,8 @@
     <PackageReference Include="MongoDB.Driver.Core" Version="2.18.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CQRSWITHREGIS.Domain.Core\Parking.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

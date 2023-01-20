@@ -10,6 +10,8 @@ namespace Parking.Domain.Data
     public interface IUnitOfWork
     {
         ICarRepository CarRepository { get; }
+        IReadCarRepository ReadCarRepository { get; }
+
         Task CommitAsync();
     }
 }

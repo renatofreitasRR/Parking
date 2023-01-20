@@ -1,8 +1,8 @@
 ﻿using Parking.Domain.Entities;
 using Parking.Domain.Repositories;
-using Parking.Infra.Data;
+using Parking.Infra.Write.Data;
 
-namespace Parking.Infra.Repositories
+namespace Parking.Infra.Write.Repositories
 {
     public class CarRepository : Repository<Car>, ICarRepository
     {

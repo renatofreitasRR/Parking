@@ -5,9 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace Parking.Infra.Data
+namespace Parking.Infra.Write.Data
 {
     public class DataContext : DbContext
     {
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
+        {
+        }
     }
 }
